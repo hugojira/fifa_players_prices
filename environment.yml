@@ -1,0 +1,13 @@
+name: fifa_players_prices
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - black
+  - flake8
+  - isort
+  - pip
+  - pip:
+    - python-dotenv
+    - mkdocs
+    - -e .
