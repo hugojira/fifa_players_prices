@@ -57,7 +57,7 @@ def keep_only_selected_csv(directory, selected_csv):
 
 def main():
   dataset = "stefanoleone992/ea-sports-fc-24-complete-player-dataset"  # Reemplaza con el nombre de tu dataset
-  directory = "../data/raw"
+  directory = "/Users/hugo/PyProjects/fifa-players-prices/fifa_players_prices/data/raw"
   selected_file = "male_players.csv"
 
   download_kaggle_dataset(dataset, directory)

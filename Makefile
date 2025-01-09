@@ -61,7 +61,11 @@ create_environment:
 	
 	@echo ">>> conda env created. Activate with:\nconda activate $(PROJECT_NAME)"
 	
-
+## Create the dataset. Download data from kaggle to raw folder, then clean data and stored in processed folder
+.PHONY: create_data
+create_data:
+	python ./fifa_players_prices/make_dataset.py
+	python ./fifa_players_prices/clean_dataset.py
 
 
 #################################################################################

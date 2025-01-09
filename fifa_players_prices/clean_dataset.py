@@ -54,7 +54,7 @@ def main():
        'weak_foot', 'international_reputation', 'club_position',
        'player_positions', 'pace', 'shooting', 'passing', 'dribbling',
        'defending', 'physic']
-    clean_data_path = "../data/processed/final_data.csv"
+    clean_data_path = "/Users/hugo/PyProjects/fifa-players-prices/fifa_players_prices/data/processed/final_data.csv"
 
     # steps to clean de dataset
     df = read_dataset(raw_path)
