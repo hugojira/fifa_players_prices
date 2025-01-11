@@ -1,0 +1,36 @@
+artifact_path: random_forest_model
+flavors:
+  python_function:
+    env:
+      conda: conda.yaml
+      virtualenv: python_env.yaml
+    loader_module: mlflow.sklearn
+    model_path: model.pkl
+    predict_fn: predict
+    python_version: 3.12.8
+  sklearn:
+    code: null
+    pickled_model: model.pkl
+    serialization_format: cloudpickle
+    sklearn_version: 1.4.2
+mlflow_version: 2.19.0
+model_size_bytes: 4266735
+model_uuid: c2567aedef7b428ea4b885382fde4ee5
+run_id: e005e5356075483aac83ec15f0ccb53e
+saved_input_example_info:
+  artifact_path: input_example.json
+  pandas_orient: split
+  serving_input_path: serving_input_example.json
+  type: dataframe
+signature:
+  inputs: '[{"type": "long", "name": "age", "required": true}, {"type": "double",
+    "name": "height_cm", "required": true}, {"type": "long", "name": "weak_foot",
+    "required": true}, {"type": "long", "name": "international_reputation", "required":
+    true}, {"type": "double", "name": "potential", "required": true}, {"type": "double",
+    "name": "pace", "required": true}, {"type": "double", "name": "shooting", "required":
+    true}, {"type": "double", "name": "passing", "required": true}, {"type": "double",
+    "name": "dribbling", "required": true}, {"type": "double", "name": "defending",
+    "required": true}, {"type": "double", "name": "physic", "required": true}]'
+  outputs: '[{"type": "double", "required": true}]'
+  params: null
+utc_time_created: '2025-01-11 02:28:42.866937'
