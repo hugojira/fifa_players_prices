@@ -1,5 +1,5 @@
 # Data
-/data/
+# /data/ # commiting the data because is small
 
 # Mac OS-specific storage files
 .DS_Store
