@@ -1,17 +1,12 @@
-FROM python:3.12.4
-
-RUN mkdir /backend
-
-
-COPY requirements.txt /backend
-
+FROM python:3.12.4-slim
 
 WORKDIR /backend
 
+COPY requirements.txt .
+
 RUN pip install -r requirements.txt
 
-
-COPY . /backend
+COPY . .
 
 EXPOSE 8000
 
