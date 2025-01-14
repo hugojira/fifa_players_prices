@@ -38,21 +38,26 @@ And end-to-end ML project to predict the prices of football players using data f
 │                         generated with `pip freeze > requirements.txt`
 │
 ├── setup.cfg          <- Configuration file for flake8
+|
+├── Docker             <- Docker files to build the airflow and mlops services
+|
+├── airflow            <- airflow directory, where dags are stored
+|
+├── mlflow-data        <- mlflow directory, where the database and models are stored
 │
 └── fifa_players_prices   <- Source code for use in this project.
     │
-    ├── __init__.py             <- Makes fifa_players_prices a Python module
     │
     ├── config.py               <- Store useful variables and configuration
     │
-    ├── dataset.py              <- Scripts to download or generate data
+    ├── make_dataset.py          <- Scripts to download data from kaggle
     │
-    ├── features.py             <- Code to create features for modeling
+    ├── clean_dataset.py          <- Code to clean the data
     │
-    ├── modeling                
-    │   ├── __init__.py 
-    │   ├── predict.py          <- Code to run model inference with trained models          
-    │   └── train.py            <- Code to train models
+    ├── mlops                
+    │   ├── prepare_data.py 
+    │   ├── train_model.py          <- Code to run train the model        
+    │   └── score_model.py          <- Code to evaluate the model
     │
     └── plots.py                <- Code to create visualizations
 ```
