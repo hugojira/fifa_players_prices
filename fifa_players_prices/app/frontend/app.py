@@ -8,6 +8,7 @@ st.set_page_config(page_title="Price Prediction", layout="centered")
 st.title("Price prediction of FIFA videogame players ⚽")
 st.markdown("This app uses a random forest regressor model to predict the Market Transfer price of football players, \
             based on data from FIFA videogames from the year 2015 to 2023 and given some player attributes.")
+st.markdown("[SOURCE CODE](https://github.com/hugojira/fifa_players_prices)")
 st.markdown("The most important features in the model are **Potential** and **Age**, followed by the other ones.")
 st.markdown("Tune the desired player's features below:")
 
