@@ -6,9 +6,13 @@
 
 And end-to-end ML project to predict the prices of football players using data from FIFA (FC Sports) videogames. The goal is to showcase the MLOps lifecycle using Microsoft Azure.
 
+**Model deployed in Streammlit:** [https://fifaplayersprices.streamlit.app](https://fifaplayersprices.streamlit.app)
+
 The data was taken from Kaggle, the FIFA videogame data from 2015 to 2023.
 
 This project uses Docker to define Airflow and MLFlow services, in order to use a DAG to prepare the data, train and score the model, while logging metricst and the artifacts. The main python code is executed in Docker, so some volumes are define in order to save the processed data and models.
+
+Trained model deploy to production with FastAPI for the backend and Streamlit for the frontend.
 
 ## Project Organization
 
