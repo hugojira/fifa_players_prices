@@ -6,6 +6,10 @@
 
 And end-to-end ML project to predict the prices of football players using data from FIFA (FC Sports) videogames. The goal is to showcase the MLOps lifecycle using Microsoft Azure.
 
+The data was taken from Kaggle, the FIFA videogame data from 2015 to 2023.
+
+This project uses Docker to define Airflow and MLFlow services, in order to use a DAG to prepare the data, train and score the model, while logging metricst and the artifacts. The main python code is executed in Docker, so some volumes are define in order to save the processed data and models.
+
 ## Project Organization
 
 ```
@@ -63,4 +67,30 @@ And end-to-end ML project to predict the prices of football players using data f
 ```
 
 --------
+
+## How to set up Airflow and Docker
+
+1. First, Docker and docker-compose need to be installed.
+2. Go to the folder ./docker and run the following commands
+
+- **Run airflow/mlflow services**
+
+docker-compose up airflow-init
+
+docker-compose up -d
+
+- **Stop the containers and remove volumes (local files are kept)**
+
+docker compose down --volumes --remove-orphans
+
+### To access the webservices in the ports
+**Airflow:** http://localhost:8080/
+
+**MLFlow:** http://localhost:5001/
+
+References:
+
+[https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html](https://airflow.apache.org/docs/apache-airflow/stable/howto/docker-compose/index.html)
+
+[https://medium.com/@dast04/running-airflow-with-docker-compose-2023-for-machine-learning-a78eeadc00cd](https://medium.com/@dast04/running-airflow-with-docker-compose-2023-for-machine-learning-a78eeadc00cd)
 
