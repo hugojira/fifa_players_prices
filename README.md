@@ -72,7 +72,7 @@ Trained model deploy to production with FastAPI for the backend and Streamlit fo
 
 --------
 
-## How to set up Airflow and Docker
+## How to set up Airflow and MLflow with Docker
 
 1. First, Docker and docker-compose need to be installed.
 2. Go to the folder ./docker and run the following commands
