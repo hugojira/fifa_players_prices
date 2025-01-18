@@ -4,7 +4,7 @@
     <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
 </a>
 
-And end-to-end ML project to predict the prices of football players using data from FIFA (FC Sports) videogames. The goal is to showcase the MLOps lifecycle using Microsoft Azure.
+And end-to-end ML project to predict the prices of football players using data from FIFA (FC Sports) videogames. The goal is to showcase the MLOps lifecycle.
 
 **Model deployed in Streammlit:** [https://fifaplayersprices.streamlit.app](https://fifaplayersprices.streamlit.app)
 
